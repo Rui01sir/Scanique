@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <img src="./img/logo-small.svg" alt="logo-small">
+                <a href="./index.html">Scanique</a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-equal-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link">價格方案</a></li>
+                    <li><a href="#" class="nav__link">解決方案</a></li>
+                    <li><a href="#" class="nav__link">常見問題</a></li>
+                </ul>
+                <div class="nav-menu-2">
+                    <li><a href="#" class="nav__link">聯繫銷售人員</a></li>
+                    <a href="./login.html"><button>login</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <script>
+        const showMenu = (toggleId, navId) => {
+            const toggle = document.getElementById(toggleId),
+                nav = document.getElementById(navId)
+
+            toggle.addEventListener('click', () => {
+                // Add show-menu class to nav menu
+                nav.classList.toggle('show-menu')
+
+                // Add show-icon to show and hide the menu icon
+                toggle.classList.toggle('show-icon')
+            })
+        }
+
+        showMenu('nav-toggle', 'nav-menu')
+    </script>
+</body>
+
+</html>

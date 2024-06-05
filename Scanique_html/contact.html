@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo-small.svg" type="image/x-icon">
+    <title>聯繫銷售人員</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-large">
+            <div class="nav-large-a">
+                <a href="./index.html" class="a-logo"><img src="./img/logo-small.svg" alt="logo-small">Scanique</a>
+                <a href="./404.html">價格方案</a>
+                <a href="./404.html">解決方案</a>
+                <a href="./404.html">常見問題</a>
+            </div>
+            <div class="nav-small-a">
+                <a href="./contact.html">聯繫銷售人員</a>
+                <a href="./login.html"><button>login</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main-content -->
+    <div class="content">
+        <div class="form-1">
+            <div class="form-2">
+                <h2>協助我們更好地了解您的需求</h2>
+                <p>我們的客戶服務團隊樂於提供專業指導。請分享您的業務背景，讓我們為您指引正確的方向。</p>
+            </div>
+            <img src="./img/contact-image.svg" alt="form-image">
+        </div>
+        <form action="">
+            <div class="form-3">
+                <h4>請告訴我們您的業務情況</h4>
+                <p>只需提供幾項基本信息即可</p>
+            </div>
+            <div class="form-4">
+                <div class="form-5" style="padding-right: 10px;">
+                    <label for="lastname">名字</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="請輸入名字" required>
+                </div>
+                <div class="form-5">
+                    <label for="firstname">姓氏</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="請輸入姓氏" required>
+                </div>
+            </div>
+            <div class="form-6">
+                <label for="email">工作信箱</label>
+                <input type="email" id="email" name="email" placeholder="請輸入電子郵件地址" required>
+            </div>
+            <div class="form-6">
+                <label for="company">工作名稱</label>
+                <input type="company" id="company" name="company" placeholder="請輸入公司名稱" required>
+            </div>
+            <div class="form-4">
+                <div class="form-5" style="padding-right: 10px;">
+                    <label for="industry">產業類別</label>
+                    <select name="industry" id="industry" required>
+                        <option value="">請選擇產業別</option>
+                        <option value="1">醫療業</option>
+                        <option value="2">科技業</option>
+                        <option value="3">教育業</option>
+                        <option value="4">金融業</option>
+                        <option value="4">媒體業</option>
+                    </select>
+                </div>
+                <div class="form-5">
+                    <label for="price">產品單價範圍</label>
+                    <select name="price" id="price" required>
+                        <option value="">請選擇價格範圍</option>
+                        <option value="1">1000-5000</option>
+                        <option value="2">5000-10000</option>
+                        <option value="3">10000-50000</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-6">
+                <label for="question">問題概述</label>
+                <input class="input-1" type="question" id="question" name="question" placeholder="請輸入標題" required>
+            </div>
+            <button type="submit" class="btn">提交</button>
+        </form>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer1">
+            <p>我們相信，透過創新的科技解決方案能夠為企業和消費者創造更大的價值，同時促進環境保護和實現可持續發展。Scanique不僅是一個產品或服務，它是一種致力於提高效率、保障信息安全、支持環保理念的信念體現。</p>
+        </div>
+        <div class="footer2">
+            <div class="footer5">
+                <img src="./img/logo-large.svg" alt="logo">
+                <div class="footer6">
+                    <p class="p1">Scanique</p>
+                    <p class="p2">© 2024 SHIMINE INC. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+            <div class="footer3">
+                <span>
+                    <p>Email<a href="mailto:ervice@shimine.com"> service@shimine.com</a></p>
+                </span>
+                <span>
+                    <p>Number<a href="tel:(+886)658702473"> (+886) 658702473</a></p>
+                </span>
+            </div>
+            <div class="footer4">
+                <span>
+                    <p>Email<a href="mailto:ervice@shimine.com"> service@shimine.com</a></p>
+                </span>
+                <span>
+                    <p>Number<a href="tel:(+886)658702473"> (+886) 658702473</a></p>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

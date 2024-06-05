@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.left-content,
+.right-content {
+  flex: 1; /* 讓左右兩側的內容彈性伸縮 */
+}
+
+.center-space {
+  flex: 2; /* 讓中間的空間比左右兩側的內容更寬 */
+}
+
+</style>
+<body>
+    <nav class="navbar">
+  <div class="left-content">Left Content</div>
+  <div class="center-space"></div>
+  <div class="right-content">Right Content</div>
+</nav>
+
+</body>
+</html>

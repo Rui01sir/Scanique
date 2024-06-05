@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo-small.svg" type="image/x-icon">
+    <title>登入</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- login-main -->
+    <div class="content-3">
+        <form action="">
+            <div class="form-8">
+                <h1>登入</h1>
+                <div class="form-7">
+                    <input type="text" id="username" name="username" placeholder="請輸入帳號" required>
+                </div>
+                <div class="form-7">
+                    <input type="password" id="password" name="password" placeholder="請輸入密碼" required>
+                    <button id="togglePassword" type="button"><i id="passwordIcon" class="fas fa-eye"></i></button>
+                </div>
+                <button class="btn-5" onclick="window.location.href = 'index.html'">登入</button>
+                <div class="form-9">
+                    <p>power by</p>
+                    <h5>Scanique</h5>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var passwordInput = document.getElementById('password');
+            var togglePassword = document.getElementById('togglePassword');
+            var passwordIcon = document.getElementById('passwordIcon');
+            var submitButton = document.getElementById('submitButton');
+
+            togglePassword.addEventListener('click', function () {
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    passwordIcon.classList.remove('fa-eye');
+                    passwordIcon.classList.add('fa-eye-slash');
+                } else {
+                    passwordInput.type = 'password';
+                    passwordIcon.classList.remove('fa-eye-slash');
+                    passwordIcon.classList.add('fa-eye');
+                }
+            });
+
+            submitButton.addEventListener('click', function (event) {
+                event.preventDefault(); // 阻止表單提交出去
+            });
+        });
+    </script>
+</body>
+
+</html>
